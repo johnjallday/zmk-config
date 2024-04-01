@@ -28,7 +28,7 @@
    &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &none
    &none &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &none
    &none &mt LSHIFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RSHIFT FSLH &none
-                &mo NUM &none &kp TAB   &kp SPACE &kp RET &kp EDIT
+                &mo NUM &none &kp TAB   &kp SPACE &kp RET &mo EDIT
                         >;
                 };
 
@@ -45,11 +45,12 @@
         edit_layer{
                         bindings = <
         &none &none &none &none &none &none &none &none &none &none &kp BSPC &none
-        &none &none &none &none &none &none &none &none &none &none &none   &none
+        &none &kp A &none &none &none &none &none &none &none &none &kp L   &none
         &none &none &none &none &none &none &none &none &none &none &none   &none
                &none &none &none &none &none &none
               >;
             };
+
 
 
     capleft_layer{
