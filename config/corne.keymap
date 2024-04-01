@@ -8,37 +8,69 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT 0
+#define NUM 1
+#define EDIT 2
+#define CAPL 3
+#define CAPR 4
+
+&mt {
+    tapping-term-ms = <400>;
+};
+
+
 / {
         keymap {
-
         compatible = "zmk,keymap";
 
         default_layer {
                         bindings = <
    &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &none
    &none &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &none
-   &none &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
-                &mo 1 &kp LGUI &kp SPACE   &kp RET &kp BSPC &kp RSHIFT
+   &none &mt LSHIFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RSHIFT FSLH &none
+                &mo NUM &none &kp TAB   &kp SPACE &kp RET &kp EDIT
                         >;
                 };
 
-          lower_layer {
+        num_layer {
                         bindings = <
-   &none    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8   &kp N9    &kp N0  &none
-   &none    &bt BT_SEL 0 &none        &none        &none        &none          &none    &none    &none    &none     &none   &none
-   &none    &none        &none        &none        &none        &none          &none    &none    &none    &none     &none   &none
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &none  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5 &kp N6 &kp N7  &kp N8   &kp N9   &kp N0  &none
+   &none  &none    &none    &none   &none   &none  &none  &none   &none    &none    &none   &none
+   &none  &kp LSHIFT    &none    &none   &none   &none  &none  &none   &none    &none    &kp RSHIFT   &none
+                    &none  &none    &none   &none  &none  &none &none
                         >;
                 };
 
-          raise_layer {
+
+        edit_layer{
                         bindings = <
-   &none &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &none
-   &none &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &none
-   &none &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &none
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
-                        >;
-                };
-                
-        };
+        &none &none &none &none &none &none &none &none &none &none &kp BSPC &none
+        &none &none &none &none &none &none &none &none &none &none &none   &none
+        &none &none &none &none &none &none &none &none &none &none &none   &none
+               &none &none &none &none &none &none
+              >;
+            };
+
+
+    capleft_layer{
+      bindings = <
+        &none   &kp Q    &kp W    &kp E     &kp R    &kp T    &kp Y    &kp U     &kp I     &kp O    &kp P     &none
+        &none   &kp A    &kp S    &kp D     &kp F    &kp G    &kp H    &kp J     &kp K     &kp L    &kp SEMI  &none
+        &none   &mt LSFT Z &kp X    &kp C     &kp V    &kp B    &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH  &none
+               &mo NUM  &trans   &kp TAB   &kp SPACE&kp RET  &mo TEST
+      >;
+    };
+    capright_layer{
+      bindings = <
+        &none   &kp Q    &kp W    &kp E     &kp R    &kp T    &kp Y    &kp U     &kp I     &kp O     &kp P     &none
+        &none   &kp A    &kp S    &kp D     &kp F    &kp G    &kp H    &kp J     &kp K     &kp L     &kp SEMI  &none
+        &none   &kp Z    &kp X    &kp C     &kp V    &kp B    &kp N    &kp M     &kp COMMA &kp DOT   &kp RSFT  &none
+                       &mo NUM  &trans   &kp TAB   &kp SPACE&kp RET  &mo TEST
+      >;
+    };
+
+  };
+
+
+
 };
