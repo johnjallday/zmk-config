@@ -31,7 +31,7 @@
    &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &none
    &none &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &none
    &none &mt LSHIFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RSHIFT FSLH &none
-                &mo NUM &SYMB &kp TAB   &kp SPACE &kp RET &mo MOUSE
+                &mo NUM &mo SYMB &kp TAB   &kp SPACE &kp RET &MOUSE
                         >;
                 };
 
