@@ -46,7 +46,7 @@
         
       edit_layer{
     bindings = <
-        &none &ESC &none &none &none &none &none &none &none &kp PG_UP &kp PG_DN &kp HOME &kp BSPC &none
+        &none &kp ESC &none &none &none &none &none &none &none &kp PG_UP &kp PG_DN &kp HOME &kp BSPC &none
         &none &kp END &none &none &none &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none &none
         &none &none &none &none &none &none &none &none &none &none &none &none
                &none &none &none &none &none &none
@@ -77,9 +77,9 @@
 
     symbol_layer{
       bindings = <
-        &none &kp EXCL      &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &kp AMPS   &kp ASTRK &kp LPAR   &kp RPAR          &none
-        &none &kp TILDE     &kp UNDER &kp PLUS  &kp LCBR  &kp RCBR  &kp PIPE  &kp COLON  &kp DQT   &kp LT     &kp GT            &none
-        &none &mt LSHIFT EXCL &kp QMARK &kp EQUAL &kp LBR   &kp RBR   &kp BSLH  &kp SEMI   &kp SQT   &kp COMMA  &kp DOT &mt RSHIFT FSLH &none
+        &none &kp EXCL        &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR          &none
+        &none &kp TILDE       &kp UNDER &kp PLUS  &kp LCBR  &kp RCBR  &kp PIPE  &kp COLON  &kp DQT    &kp LT     &kp GT            &none
+        &none &mt LSHIFT EXCL &kp QMARK &kp EQUAL &kp LBR   &kp RBR   &kp BSLH  &kp SEMI   &kp SQT    &kp COMMA  &kp DOT &mt RSHIFT FSLH &none
                 &none &none &trans &trans &trans &none
       >;
     };
