@@ -46,7 +46,7 @@
         
       edit_layer{
     bindings = <
-        &none &ESC &none &none &none &none &none &none &none &kp PGUP &kp PGDN &kp HOME &kp BSPC &none
+        &none &ESC &none &none &none &none &none &none &none &kp PG_UP &kp PG_DN &kp HOME &kp BSPC &none
         &none &kp END &none &none &none &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none &none
         &none &none &none &none &none &none &none &none &none &none &none &none
                &none &none &none &none &none &none
@@ -59,7 +59,7 @@
       bindings = <
         &none   &kp Q    &kp W    &kp E     &kp R    &kp T    &kp Y    &kp U     &kp I     &kp O    &kp P     &none
         &none   &kp A    &kp S    &kp D     &kp F    &kp G    &kp H    &kp J     &kp K     &kp L    &kp SEMI  &none
-        &none   &mt LSFT Z &kp X    &kp C     &kp V    &kp B    &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH  &none
+        &none   &mt LSHIFT Z &kp X    &kp C     &kp V    &kp B    &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH  &none
                &mo NUM    &none   &kp TAB   &kp SPACE &kp RET  &none
             >;
 
@@ -68,7 +68,7 @@
       bindings = <
         &none   &kp Q    &kp W    &kp E     &kp R    &kp T    &kp Y    &kp U     &kp I     &kp O     &kp P     &none
         &none   &kp A    &kp S    &kp D     &kp F    &kp G    &kp H    &kp J     &kp K     &kp L     &kp SEMI  &none
-        &none   &kp Z    &kp X    &kp C     &kp V    &kp B    &kp N    &kp M     &kp COMMA &kp DOT   &mt RSFT FSLH  &none
+        &none   &kp Z    &kp X    &kp C     &kp V    &kp B    &kp N    &kp M     &kp COMMA &kp DOT   &mt RSHIFT FSLH  &none
                        &mo NUM  &none   &kp TAB   &kp SPACE &kp RET  &none
       >;
     };
@@ -79,7 +79,7 @@
       bindings = <
         &none &kp EXCL      &kp AT    &kp HASH  &kp DLLR  &kp PRCNT &kp CARET &kp AMPS   &kp ASTRK &kp LPAR   &kp RPAR          &none
         &none &kp TILDE     &kp UNDER &kp PLUS  &kp LCBR  &kp RCBR  &kp PIPE  &kp COLON  &kp DQT   &kp LT     &kp GT            &none
-        &none &mt LSFT EXCL &kp QMARK &kp EQUAL &kp LBR   &kp RBR   &kp BSLH  &kp SEMI   &kp SQT   &kp COMMA  &kp DOT &mt RSFT FSLH &none
+        &none &mt LSHIFT EXCL &kp QMARK &kp EQUAL &kp LBR   &kp RBR   &kp BSLH  &kp SEMI   &kp SQT   &kp COMMA  &kp DOT &mt RSHIFT FSLH &none
                 &none &none &trans &trans &trans &none
       >;
     };
