@@ -1,0 +1,9 @@
+
+v0.03
+updated ESC keys
+need to update :""'',./[] separate layer for special marks
+num layer should have `-=`
+
+
+v0.04
+Waiting for the mouse layer
